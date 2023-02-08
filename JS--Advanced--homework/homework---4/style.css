@@ -21,7 +21,7 @@ body {
     margin-bottom: 20px;
 }
 
-#mainhrad{
+#mainhrad {
     display: flex;
     width: 100%;
     text-align: center;
@@ -29,7 +29,7 @@ body {
     justify-content: space-between;
 }
 
-#preHeadText{
+#preHeadText {
     text-transform: uppercase;
     width: 100%;
     display: flex;
@@ -55,11 +55,11 @@ body {
     flex-wrap: wrap;
 }
 
-#male{
+#male {
     height: 32%;
 }
 
-h2{
+h2 {
     text-transform: uppercase;
 }
 
@@ -122,7 +122,10 @@ h2{
     background-color: #3e8e41;
 }
 
-#btn{
+.maleBTN,
+.femaleBTN,
+.jeweleryBTN,
+.electronicsBTN {
     border: 3px solid rgb(72, 93, 131);
     border-radius: 5px;
     text-decoration: none;
@@ -135,39 +138,58 @@ h2{
     font-weight: 700;
 }
 
-#btn:hover{
+.maleBTN:hover {
+    border: 3px solid yellow;
+    background-color: aqua;
+    color: red;
+}
+
+.femaleBTN:hover {
+    border: 3px solid yellow;
+    background-color: aqua;
+    color: red;
+}
+
+.jeweleryBTN:hover {
+    border: 3px solid yellow;
+    background-color: aqua;
+    color: red;
+}
+
+.electronicsBTN:hover {
     border: 3px solid yellow;
     background-color: aqua;
     color: red;
 }
 
 
-li{
+li {
     justify-content: center;
     display: flex;
     list-style: none;
     margin: 10px 0px;
     width: 100%;
 }
-ul{
+
+ul {
     display: none;
     width: 100%;
     padding: 0;
 }
 
-p{
+p {
     text-align: center;
     font-size: large;
     font-weight: 750;
 }
 
-#showCategory{
+#showCategory {
     margin-top: 30px;
     height: 20px;
     width: 90px;
 }
 
-#goBack{
+#goBack {
     text-decoration: none;
     color: black;
     border: 1px solid black;
