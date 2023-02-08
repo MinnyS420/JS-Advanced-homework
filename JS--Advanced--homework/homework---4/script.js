@@ -10,15 +10,14 @@ const female = document.getElementById('female');
 const jewelery = document.getElementById('jewelery-container');
 const electronics = document.getElementById('electronics-container');
 const mansClothingDiv = document.getElementById('mansClothing');
+const homeBTN = document.getElementById("goBack");
 
 //BTN
 const btn = document.getElementById("btn");
 const showCategory = document.getElementById("showCategory");
 const ul = document.getElementById("ul");
 
-// fetch(getAllProductsURL)
-//     .then(res => res.json())
-//     .then((json)=> console.log(json));
+
 
 fetch(jeweleryURL)
     .then(res => res.json())
@@ -27,7 +26,6 @@ fetch(jeweleryURL)
             const elementsHTML = cardInfoJewelery(element);
             jewelery.innerHTML += elementsHTML;
         });
-        console.log(json);
     })
 
 fetch(electronicsURL)
@@ -37,7 +35,6 @@ fetch(electronicsURL)
             const elementsHTML = cardInfoElectronics(element);
             electronics.innerHTML += elementsHTML;
         });
-        console.log(json);
     })
 
 fetch(womensClothingURL)
@@ -47,7 +44,6 @@ fetch(womensClothingURL)
             const elementsHTML = cardInfoFemale(element);
             female.innerHTML += elementsHTML;
         });
-        console.log(json);
     })
 
 fetch(mansClothingURL)
@@ -57,7 +53,6 @@ fetch(mansClothingURL)
             const elementsHTML = cardInfoMale(element);
             male.innerHTML += elementsHTML;
         });
-        console.log(json);
     })
 
 function cardInfoMale(element) {
@@ -128,3 +123,8 @@ showCategory.addEventListener('click', () => {
         ul.style.display = 'none'
     }
 });
+
+
+fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>console.log(json))

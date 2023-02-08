@@ -38,6 +38,15 @@ body {
     justify-content: center;
 }
 
+#goBack{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: gainsboro;
+}
+
 
 #female {
     width: 100%;

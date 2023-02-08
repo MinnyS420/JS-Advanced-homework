@@ -99,3 +99,12 @@ h2{
 #buyBTN:hover {
     background-color: #3e8e41;
 }
+
+#goBack{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: gainsboro;
+}
