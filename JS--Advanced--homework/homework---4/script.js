@@ -10,7 +10,6 @@ const female = document.getElementById('female');
 const jewelery = document.getElementById('jewelery-container');
 const electronics = document.getElementById('electronics-container');
 const mansClothingDiv = document.getElementById('mansClothing');
-const homeBTN = document.getElementById("goBack");
 const maleID = document.getElementById("maleID")
 const femaleID = document.getElementById("femaleID")
 const jeweleryID = document.getElementById("jeweleryID")
