@@ -4,7 +4,7 @@ const categoryUrls = [
     `https://fakestoreapi.com/products/category/women's clothing`,
     `https://fakestoreapi.com/products/category/men's clothing`
 ];
-
+const allProduct = document.getElementById("allProduct");
 const male = document.getElementById("male");
 const female = document.getElementById('female');
 const jewelery = document.getElementById('jewelery-container');
@@ -17,6 +17,7 @@ const jeweleryID = document.getElementById("jeweleryID")
 const electronicsID = document.getElementById("electronicsID")
 
 // BTN
+const allProductsBTN = document.getElementById("allProductsBTN");
 const maleBTN = document.getElementById("maleBTN")
 const femaleBTN = document.getElementById("femaleBTN")
 const jeweleryBTN = document.getElementById("jeweleryBTN")
@@ -28,7 +29,7 @@ const ul = document.getElementById("ul");
 
 function generateProductHTML(element) {
     return `
-      <div class='card' id="electroConfig">
+      <div class='card' id="cardConfig">
         <div id='img-config'>
           <img id='img' src=${element.image} alt="img">
         </div>
@@ -41,10 +42,16 @@ function generateProductHTML(element) {
 }
 
 async function fetchCategories() {
-    const allProducts = await Promise.all(categoryUrls.map(async url => {
-        const res = await fetch(url);
-        return await res.json();
-    }));
+    let allProducts = sessionStorage.getItem('allProducts');
+    if (allProducts) {
+        allProducts = JSON.parse(allProducts);
+    } else {
+        allProducts = await Promise.all(categoryUrls.map(async url => {
+            const res = await fetch(url);
+            return await res.json();
+        }));
+        sessionStorage.setItem('allProducts', JSON.stringify(allProducts));
+    }
 
     const products = allProducts.flat();
     male.innerHTML = products
@@ -80,6 +87,7 @@ maleBTN.addEventListener("click", () => {
     female.style.display = "none";
     jewelery.style.display = "none";
     electronics.style.display = "none";
+    allProduct.style.display = "none";
     maleID.style.display = "flex";
     femaleID.style.display = "none";
     jeweleryID.style.display = "none";
@@ -90,6 +98,7 @@ femaleBTN.addEventListener("click", () => {
     female.style.display = "flex";
     jewelery.style.display = "none";
     electronics.style.display = "none";
+    allProduct.style.display = "none";
     maleID.style.display = "none";
     femaleID.style.display = "flex";
     jeweleryID.style.display = "none";
@@ -100,6 +109,7 @@ jeweleryBTN.addEventListener("click", () => {
     female.style.display = "none";
     jewelery.style.display = "flex";
     electronics.style.display = "none";
+    allProduct.style.display = "none";
     maleID.style.display = "none";
     femaleID.style.display = "none";
     jeweleryID.style.display = "flex";
@@ -110,8 +120,20 @@ electronicsBTN.addEventListener("click", () => {
     female.style.display = "none";
     jewelery.style.display = "none";
     electronics.style.display = "flex";
+    allProduct.style.display = "none";
     maleID.style.display = "none";
     femaleID.style.display = "none";
     jeweleryID.style.display = "none";
+    electronicsID.style.display = "flex";
+});
+allProductsBTN.addEventListener("click", () => {
+    male.style.display = "flex";
+    female.style.display = "flex";
+    jewelery.style.display = "flex";
+    electronics.style.display = "flex";
+    allProduct.style.display = "flex";
+    maleID.style.display = "flex";
+    femaleID.style.display = "flex";
+    jeweleryID.style.display = "flex";
     electronicsID.style.display = "flex";
 });

@@ -71,10 +71,8 @@ h2 {
     justify-content: center;
 }
 
-#maleConfig,
-#femaleConfig,
-#jeweleryConfig,
-#electroConfig {
+
+#cardConfig {
     margin: 20px;
     text-align: center;
     border-radius: 5px;
@@ -99,14 +97,6 @@ h2 {
     object-fit: contain;
 }
 
-#mansClothing,
-#femaleClothing,
-#jewelery,
-#electronics {
-    padding: 10px;
-    font-weight: bold;
-}
-
 #buyBTN {
     width: 100%;
     background-color: #4CAF50;
@@ -122,10 +112,7 @@ h2 {
     background-color: #3e8e41;
 }
 
-.maleBTN,
-.femaleBTN,
-.jeweleryBTN,
-.electronicsBTN {
+.categoryBTN {
     border: 3px solid rgb(72, 93, 131);
     border-radius: 5px;
     text-decoration: none;
@@ -138,30 +125,11 @@ h2 {
     font-weight: 700;
 }
 
-.maleBTN:hover {
+.categoryBTN:hover {
     border: 3px solid yellow;
     background-color: aqua;
     color: red;
 }
-
-.femaleBTN:hover {
-    border: 3px solid yellow;
-    background-color: aqua;
-    color: red;
-}
-
-.jeweleryBTN:hover {
-    border: 3px solid yellow;
-    background-color: aqua;
-    color: red;
-}
-
-.electronicsBTN:hover {
-    border: 3px solid yellow;
-    background-color: aqua;
-    color: red;
-}
-
 
 li {
     justify-content: center;
