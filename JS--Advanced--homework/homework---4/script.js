@@ -10,10 +10,6 @@ const female = document.getElementById('female');
 const jewelery = document.getElementById('jewelery-container');
 const electronics = document.getElementById('electronics-container');
 const mansClothingDiv = document.getElementById('mansClothing');
-const maleID = document.getElementById("maleID")
-const femaleID = document.getElementById("femaleID")
-const jeweleryID = document.getElementById("jeweleryID")
-const electronicsID = document.getElementById("electronicsID")
 
 // BTN
 const allProductsBTN = document.getElementById("allProductsBTN");
@@ -21,6 +17,10 @@ const maleBTN = document.getElementById("maleBTN")
 const femaleBTN = document.getElementById("femaleBTN")
 const jeweleryBTN = document.getElementById("jeweleryBTN")
 const electronicsBTN = document.getElementById("electronicsBTN")
+const maleID = document.getElementById("maleID")
+const femaleID = document.getElementById("femaleID")
+const jeweleryID = document.getElementById("jeweleryID")
+const electronicsID = document.getElementById("electronicsID")
 
 const btn = document.getElementById("btn");
 const showCategory = document.getElementById("showCategory");
