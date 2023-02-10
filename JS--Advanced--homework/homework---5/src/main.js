@@ -57,7 +57,7 @@ import Mammal from "./models/mammal.js";
 
 //                                  2
 
-const farmer1 = new Farmer('Lazo', 35, 'Male', 'Lazovski', 'Brown', 'Smegj', 'Light_Blue', 83, 182, 'Worker');
+const farmer1 = new Farmer('Lazo', 35, 'Male', 'Lazovski', 'Brown', 'Smegj', 'Light_Blue', 83, 182, 'Farmer');
 
 console.log(farmer1);
 farmer1.talk();
@@ -71,7 +71,7 @@ function farmerDeth(){ const deth1 = setInterval(() => {
 
 farmerDeth();
 
-const artist1 = new Artist('Lazo', 35, 'Male', 'Lazovski', 'Brown', 'Smegj', 'Light_Blue', 83, 182, 'Worker');
+const artist1 = new Artist('Pero', 30, 'Male', 'Perovski', 'Yellow', 'Plav', 'Brown', 73, 200, 'Artist');
 
 console.log(artist1);
 artist1.talk();
@@ -85,7 +85,7 @@ function artistDeth(){ const deth1 = setInterval(() => {
 
 artistDeth();
 
-const worker1 = new Worker('Lazo', 35, 'Male', 'Lazovski', 'Brown', 'Smegj', 'Light_Blue', 83, 182, 'Worker');
+const worker1 = new Worker('Gjoko', 53, 'Male', 'Gjokovski', 'Black', 'Smegj', 'Green', 87, 172, 'Worker');
 
 console.log(worker1);
 worker1.talk();
