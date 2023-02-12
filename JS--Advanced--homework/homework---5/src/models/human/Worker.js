@@ -12,7 +12,7 @@ export default class Worker extends Human {
         const workAudio = new Audio('../../../assets/hilta.mp3')
         this.hiltaInterval = setInterval(() => {
             if (Math.random() > 0.9)
-                workerSound.play();
+                workAudio.play();
         }, 200)
     }
     talk(talking = 'III guzva pa ke kasnam!') {
@@ -23,10 +23,10 @@ export default class Worker extends Human {
         }
         console.log(talking);
     }
-    krsiDzid(){
-        this.Krsiii = setInterval(()=>{
+    krsiDzid() {
+        this.Krsiii = setInterval(() => {
             console.log(`Krsiii...`);
-        },1000)
+        }, 1000)
     }
     die(causeOfDeath = 'mu padna cigla na glava') {
         super.die(causeOfDeath);

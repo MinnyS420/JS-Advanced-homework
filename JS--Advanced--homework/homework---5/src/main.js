@@ -62,41 +62,42 @@ const farmer1 = new Farmer('Lazo', 35, 'Male', 'Lazovski', 'Brown', 'Smegj', 'Li
 console.log(farmer1);
 farmer1.talk();
 
-farmer1.popravaTraktor();
+// farmer1.popravaTraktor();
 
-function farmerDeth(){ const deth1 = setInterval(() => {
-    farmer1.die();
-    clearInterval(deth1);
-}, 10000)}
+// function farmerDeth(){ const deth1 = setInterval(() => {
+//     farmer1.die();
+//     clearInterval(deth1);
+// }, 10000)}
 
-farmerDeth();
+// farmerDeth();
 
 const artist1 = new Artist('Pero', 30, 'Male', 'Perovski', 'Yellow', 'Plav', 'Brown', 73, 200, 'Artist');
 
 console.log(artist1);
 artist1.talk();
 
-artist1.sipuvaBoja();
+// artist1.sipuvaBoja();
 
-function artistDeth(){ const deth1 = setInterval(() => {
-    artist1.die();
-    clearInterval(deth1);
-}, 10000)}
+// function artistDeth(){ const deth1 = setInterval(() => {
+//     artist1.die();
+//     clearInterval(deth1);
+// }, 10000)}
 
-artistDeth();
+// artistDeth();
 
 const worker1 = new Worker('Gjoko', 53, 'Male', 'Gjokovski', 'Black', 'Smegj', 'Green', 87, 172, 'Worker');
 
 console.log(worker1);
 worker1.talk();
 
-worker1.krsiDzid();
+worker1.workerSound();
 
-function workerDeth(){ const deth1 = setInterval(() => {
-    worker1.die();
-    clearInterval(deth1);
-}, 10000)}
+// worker1.krsiDzid();
 
-workerDeth();
+// function workerDeth(){ const deth1 = setInterval(() => {
+//     worker1.die();
+//     clearInterval(deth1);
+// }, 10000)}
 
+// workerDeth();
 
