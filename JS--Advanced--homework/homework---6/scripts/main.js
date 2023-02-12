@@ -21,5 +21,4 @@ console.log(`Bear instanceof Animal:`,bear instanceof Animal);
 
 
 console.log(`human1 instanceof Animal:`,human1 instanceof Animal);
-human1.talk();
-  
+human1.talk(); 
